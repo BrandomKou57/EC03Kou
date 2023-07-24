@@ -41,3 +41,15 @@ Content-Type: application/json
 ###
 
 GET {{server}}/instrumentos/54/categoria
+
+###
+GET {{server}}/instrumentos?sort=nombre,desc
+###
+
+POST {{server}}/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos de Cuerda"}
+
+###
+
