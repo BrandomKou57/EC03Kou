@@ -1,0 +1,43 @@
+@server = https://brandomkou57-silver-halibut-rjvv4vvgpjp25jq7-8080.preview.app.github.dev
+
+###
+
+GET {{server}}
+
+###
+
+GET {{server}}/instrumentos
+
+###
+
+GET {{server}}/instrumentos?size=2
+
+###
+
+GET {{server}}/instrumentos
+
+###
+
+POST {{server}}/instrumentos
+Content-Type: application/json
+
+{"nombre": "Violin"}
+
+###
+
+GET {{server}}/instrumentos/search/findByNombre?nombre=Guitarra
+
+###
+
+GET {{server}}/categorias
+
+###
+
+POST {{server}}/categorias
+Content-Type: application/json
+
+{"nombre":"Instrumentos de percusion"}
+
+###
+
+GET {{server}}/instrumentos/54/categoria
