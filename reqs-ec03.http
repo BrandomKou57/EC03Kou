@@ -1,0 +1,27 @@
+@server = https://brandomkou57-silver-halibut-rjvv4vvgpjp25jq7-8080.preview.app.github.dev
+@apiserver = {{server}}/api/instrumentos
+
+###
+
+GET {{server}}
+
+###
+GET {{server}}/codigo
+
+###
+GET {{server}}/nombre-completo
+
+###
+GET {{apiserver}}/listar
+
+###
+POST {{apiserver}}/nuevo
+Content-Type: application/x-www-form-urlencoded
+
+nombre=Guitarra
+
+###
+DELETE  {{apiserver}}/eliminar
+Content-Type: application/x-www-form-urlencoded
+
+id=1
